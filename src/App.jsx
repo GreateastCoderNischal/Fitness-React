@@ -8,15 +8,18 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Box width="400px">
+ 
       <BrowserRouter>
+      <Box width="400px">
+
         <Navbar />
+      </Box>
         <Routes>
           <Route path='/' exact element={<Home />} />
           <Route path="/exercise/:id" element={<ExerciseDetail />} />
         </Routes>
       </BrowserRouter>
-    </Box>
+
   )
 }
 
